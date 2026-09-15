@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NSIB model run row",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["type", "model", "provider", "run", "date"],
+      "properties": {
+        "type": {"const": "meta"},
+        "model": {"type": "string"},
+        "provider": {"type": "string"},
+        "run": {"type": "string"},
+        "date": {"type": "string"},
+        "reasoning_mode": {"type": ["string", "null"]},
+        "temperature": {"type": ["number", "null"]},
+        "seed": {"type": ["integer", "null"]}
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "object",
+      "required": ["id", "output"],
+      "properties": {
+        "id": {"type": "string"},
+        "output": {"type": "string"},
+        "constraint_scores": {
+          "type": "array",
+          "items": {"enum": [0, 1]}
+        },
+        "hallucinated_semantic_collapses": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    }
+  ]
+}
