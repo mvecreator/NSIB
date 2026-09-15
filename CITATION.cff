@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use NSIB in research, please cite this repository."
+title: "NSIB: Novel Semantic Induction Benchmark"
+type: software
+authors:
+  - family-names: "Popov"
+    given-names: "Konstantin"
+version: "0.1"
+date-released: "2026-09-15"
+license: MIT
+repository-code: "https://github.com/mvecreator/NSIB"
+keywords:
+  - language models
+  - semantic induction
+  - benchmark
+  - compositional generalization
+  - reasoning
