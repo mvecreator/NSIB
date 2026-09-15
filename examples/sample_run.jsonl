@@ -1,0 +1,3 @@
+{"type":"meta","model":"MODEL_NAME","provider":"PROVIDER","run":"R1","date":"2026-09-15","reasoning_mode":"MODE","temperature":null,"seed":null}
+{"id":"P1-A01","output":"ANSWER: B\nShort justification."}
+{"id":"P1-F01","output":"Generated continuation...","constraint_scores":[1,1,1,1],"hallucinated_semantic_collapses":0}
